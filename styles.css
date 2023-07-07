@@ -162,3 +162,42 @@ main > * { border-radius: 12px; }
     position: relative;
     place-self: center;
 }
+
+
+.blog-entry-card {
+    width: 40%;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.54);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "title img"
+        "description description"
+        "link .";
+    gap: 4vh 0;
+    overflow: hidden;
+}
+.blog-entry-card .title {
+    grid-area: title;
+    font: 500 1.5rem 'Montserrat', 'sans-serif';
+    color: var(--GrayTitle);
+}
+.blog-entry-card img {
+    grid-area: img;
+    width: 140%;
+    border-radius: 12px;
+}
+.blog-entry-card .description {
+    grid-area: description;
+    white-space: pre-line;
+    font: 500 1rem 'Montserrat', 'sans-serif';
+    color: var(--GrayContent);
+}
+.blog-entry-card .link {
+    grid-area: link;
+    font: 600 1rem 'Montserrat', 'sans-serif';
+    color: #2F80ED;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
