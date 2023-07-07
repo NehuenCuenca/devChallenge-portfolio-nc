@@ -8,6 +8,7 @@
     --GrayTitle:#333333; 
     --GraySubTitle:#4F4F4F; 
     --GrayContent:#828282; 
+    --GrayContentSoft:#C4C4C4; 
     --BlueContrast:#2F80ED; 
 }
 
@@ -42,6 +43,9 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh 0;
     /* background-color: cadetblue;     */
 }
 main > * { border-radius: 12px; }
@@ -114,3 +118,47 @@ main > * { border-radius: 12px; }
     color: var(--GrayContent);
 }
 
+.skills-section {
+    width: 30%;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.54);
+    padding: 1rem;
+}
+
+.skills-section span.title {
+    font: 700 1.125rem 'Montserrat', 'sans-serif';
+    color: var(--GraySubTitle);
+}
+.skills-section ul.bar-progress-skills-list {
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh 1vh;
+}
+
+.bar-progress-skills-list .bar {
+    background-color: var(--GrayContentSoft);
+    border-radius: 12px;
+    position: relative;
+    padding: .5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+.bar .progress {
+    position: absolute;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--BlueContrast);
+    border-radius: 12px;    
+}
+.bar span{
+    height: 100%;
+    font: 600 1rem 'Montserrat', 'sans-serif';
+    color: var(--GrayTitle);
+    border-radius: 12px;    
+    position: relative;
+    place-self: center;
+}
