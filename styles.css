@@ -212,7 +212,8 @@ main > * { border-radius: 12px; }
     flex-direction: column;
 }
 
-.certificates-section .title {
+.certificates-section .title,
+.experiences-section .title {
     font: 500 1.5rem 'Montserrat', 'sans-serif';
     color: var(--GraySubTitle);
 }
@@ -250,5 +251,60 @@ ul.certificates-list {
 .certificate-item .one-line-description {
     grid-area: description;
     font: 600 1rem 'Montserrat', 'sans-serif';
+    color: var(--GrayContent);
+}
+
+
+.experiences-section {
+    width: 45%;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.54);
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+ul.experiences-list {
+    width: 100%;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh 0;
+}
+
+.experiences-list li.experience-item {
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "logo date"
+        "logo charge"
+        "logo description";
+    gap: 1vh 1vw;
+}
+
+.experience-item img { 
+    grid-area: logo;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    place-self: center;
+}
+
+.experience-item .date { 
+    grid-area: date;
+    font: 500 14px 'Montserrat', 'sans-serif';
+    color: var(--GrayContent);
+}
+
+.experience-item .charge { 
+    grid-area: charge;
+    font: 600 1rem 'Montserrat', 'sans-serif';
+}
+
+.experience-item .short-description { 
+    grid-area: description;
+    font: 500 1rem 'Montserrat', 'sans-serif';
     color: var(--GrayContent);
 }
