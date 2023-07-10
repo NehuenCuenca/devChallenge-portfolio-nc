@@ -308,3 +308,135 @@ ul.experiences-list {
     font: 500 1rem 'Montserrat', 'sans-serif';
     color: var(--GrayContent);
 }
+
+
+
+.projects-section {
+    width: 100%;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.54);
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}
+
+.projects-section .header{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+
+
+.header .title{
+    font: 500 1.125rem 'Montserrat', 'sans-serif';
+    color: var(--GraySubTitle);
+}
+.header ul.filters-by-tags-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh 2vw;
+}
+
+.filters-by-tags-list li.filter-tag-item {
+    font: 500 14px 'Montserrat', 'sans-serif';
+    color: var(--GraySubTitle);
+}
+
+.filter-tag-item button {
+    border: 1px solid var(--GraySubTitle);
+    background-color: white;
+    border-radius: 12px;
+    padding: .5rem .6rem;
+    cursor: pointer;
+    font: 500 14px 'Montserrat', 'sans-serif';
+    color: var(--GraySubTitle);
+}
+
+.filter-tag-item.active button,
+.filter-tag-item:hover button {
+    border: 1px solid var(--BlueContrast);
+    background-color: var(--BlueContrast);
+    color: white;
+}
+
+.projects-section .grid-projects-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5vh 3vw;
+}
+.projects-section .project-card-item {
+    width: 25%;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.54);
+    border-radius: 12px;
+    padding: .6rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "img" "tags" "name" "description" "links";
+    gap: 1vh 2vw;
+}
+
+.project-card-item img {
+    grid-area: img;
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.project-card-item .tag-lists {
+    grid-area: tags;
+    font: 500 1rem 'Montserrat', 'sans-serif';
+    color: var(--GraySubTitle);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh 1vw;
+}
+
+
+.project-card-item .name-project {
+    grid-area: name;
+    font: 500 1.5rem 'Montserrat', 'sans-serif';
+    color: var(--GrayTitle);
+}
+
+.project-card-item p.description-project {
+    grid-area: description;
+    font: 500 1rem 'Montserrat', 'sans-serif';
+    color: var(--GrayContent);
+}
+
+.project-card-item .links {
+    grid-area: links;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh 1vw;
+}
+
+.links a.link {
+    width: 45%;
+    font: 500 1.125rem 'Montserrat', 'sans-serif';
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid var(--BlueContrast);
+    padding: .5rem .8rem;
+    cursor: pointer;
+}
+.links .demo {
+    background-color: var(--BlueContrast);
+    color: white;
+}
+.links .repository {
+    background-color: white;
+    color: var(--BlueContrast);
+}
