@@ -451,3 +451,13 @@ ul.experiences-list {
     background-color: white;
     color: var(--BlueContrast);
 }
+
+footer {
+    padding: .5rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 700 14px 'Montserrat', 'sans-serif';
+    color: var(--GrayContent);
+}

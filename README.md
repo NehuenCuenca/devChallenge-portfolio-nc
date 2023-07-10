@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Portfolio DevChallenge NC</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -27,7 +27,7 @@
 ## Table of Contents
 
 - [Overview](#overview)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Contact](#contact)
@@ -87,13 +87,13 @@ $ npm start
 ## User storys
 Challenge: Create all the elements in the given designs and then create a portfolio with your own content. You can create your own layout. You can use React, Vue.js, or other libraries to create a reusable component, but it is not required. Don’t look at the existing solution. Fulfill user stories below:
 
-User story: I can see personal details
-User story: I can see skills
-User story: I can see projects
+User story: I can see personal details ✅
+User story: I can see skills ✅
+User story: I can see projects ✅
 User story: I can filter projects by tag
-User story: I can see hobbies or certificates
-User story (optional): I can see experiences
-User story (optional): I can see blogs
+User story: I can see hobbies or certificates ✅
+User story (optional): I can see experiences ✅
+User story (optional): I can see blogs ✅
 User story (optional): I can see projects on different pages
 You can use your own color to make yours stand out
 
@@ -102,6 +102,6 @@ Icon: https://google.github.io/material-design-icons/
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website  [Portfolio](https://portfolio-nc.netlify.app/)
+- GitHub   [NehuenCuenca](https://github.com/NehuenCuenca)
+- LinkedIn [Nehuen Cuenca](https://www.linkedin.com/in/nehuen-cuenca/)
