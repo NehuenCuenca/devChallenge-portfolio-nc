@@ -452,6 +452,35 @@ ul.experiences-list {
     color: var(--BlueContrast);
 }
 
+.projects-section ul.paginate-projects {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+.paginate-projects li.page-item {
+    width: 36px;
+    height: 36px;
+}
+
+.page-item button {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--GraySubTitle);
+    border-radius: 4px;
+    font: 400 12px 'Roboto', sans-serif;
+    color: #4F4F4F;
+    cursor: pointer;
+}
+.page-item.active button {
+    background-color: var(--BlueContrast);
+    border: 1px solid var(--BlueContrast);
+    font: 400 12px 'Roboto', sans-serif;
+    color: white;
+}
+
 footer {
     padding: .5rem;
     margin-top: 4rem;
