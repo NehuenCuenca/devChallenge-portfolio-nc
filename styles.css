@@ -474,6 +474,8 @@ ul.experiences-list {
     color: #4F4F4F;
     cursor: pointer;
 }
+
+.page-item button:hover,
 .page-item.active button {
     background-color: var(--BlueContrast);
     border: 1px solid var(--BlueContrast);
